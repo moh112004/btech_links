@@ -1,0 +1,65 @@
+body {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    background-color: rgb(255, 255, 255);
+}
+
+.appBar {
+    /* height: 10vh; */
+    /* width: 100%;  */
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 1vh;
+  
+}
+
+img {
+    height: 10vh;
+}
+
+video {
+    height: 88vh;
+
+}
+
+.video {
+    /* position: relative; */
+    text-align: center;
+}
+
+
+.button {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: orange;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    animation: my-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes my-animation {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.3;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

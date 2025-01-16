@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Parameter Handler</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="appBar">
+        <img src="logo.png" />
+    </div>
+    <div class="video">
+        <video src="vid.mp4" height="80%" width="100%" autoplay controls>
+    </div>
+    <div class="button">
+        <button onclick=redirectTo()>أطلب الآن!</button>
+    </div>
+
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const value = params.get('a');
+        function redirectTo() {
+            window.location.href = `https://btech1.com/affiliate/${value}?redirect_to=`;
+        }
+
+    </script>
+</body>
+
+</html>
